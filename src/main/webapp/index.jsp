@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2>Welcome to Hello World!This is DevOps practise session</h2> 
+<h2> Hello World!</h2> 
 </body>
 </html>
