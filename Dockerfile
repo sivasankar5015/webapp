@@ -1,6 +1,6 @@
 FROM tomcat
 
-ADD ./webapp/target/*.war /usr/local/tomcat/webapps/
+ADD ./'Simple webapp'/target/*.war /usr/local/tomcat/webapps/
 
 EXPOSE 8088
 
