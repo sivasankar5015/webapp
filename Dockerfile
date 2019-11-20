@@ -1,6 +1,8 @@
 FROM tomcat
 
-ADD ./webapp.war /usr/local/tomcat/webapps/
+WORKDIR /usr/local/tomcat/webapps/
+
+ADD ./Docker-build-and-push/target/*.war ./
 
 EXPOSE 8088
 
