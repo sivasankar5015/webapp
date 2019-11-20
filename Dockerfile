@@ -4,7 +4,7 @@ WORKDIR /usr/local/tomcat/webapps/
 
 ADD ./Docker-build-and-push/target/*.war ./
 
-EXPOSE 8088
+EXPOSE 8080
 
 
 CMD ["catalina.sh","run"]
