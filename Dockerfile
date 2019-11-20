@@ -1,6 +1,6 @@
 FROM tomcat
 
-COPY ./Docker-build-and-push/target/*.war /usr/local/tomcat/webapps/
+RUN cp /home/ubuntu/.jenkins/workspace/Docker-build-and-push/target/*.war /usr/local/tomcat/webapps/
 
 EXPOSE 8088
 
