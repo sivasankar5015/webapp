@@ -1,6 +1,6 @@
 FROM tomcat
 
-RUN cp -a ./Docker-build-and-push/target/*.war /usr/local/tomcat/webapps/
+ADD ./Docker-build-and-push/target/*.war /usr/local/tomcat/webapps/
 
 EXPOSE 8088
 
