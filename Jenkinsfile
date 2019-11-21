@@ -23,5 +23,11 @@ pipeline {
 	           sh "docker tag webapp:${env.BUILD_ID} siva3100/webapp:${env.BUILD_ID}"
 	       }    
        }
-    }
+       stage('pushing image to the Docker Hub'){
+	       steps { 
+	           sh "docker push siva3100/webapp:${env.BUILD_ID}"
+	       }    
+      }
+    
+   }
 }
