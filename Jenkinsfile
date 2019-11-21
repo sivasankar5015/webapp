@@ -14,5 +14,11 @@ pipeline {
 	          
 	       }    
 	  }
-      }
+          stage('Docker hub loging'){
+	       steps { 
+	           sh 'docker login -u siva3100 -p Siva@5015'
+	       }    
+	
+	  }
+     }
 }
