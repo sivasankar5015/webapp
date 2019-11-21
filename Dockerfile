@@ -1,8 +1,6 @@
 FROM tomcat
-
-WORKDIR /usr/local/tomcat/webapps/
-
-ADD ./Docker-build-and-push/target/*.war ./
+ 
+ADD ./Docker-build-and-push/target/*.war /usr/local/tomcat/webapps/
 
 EXPOSE 8080
 
