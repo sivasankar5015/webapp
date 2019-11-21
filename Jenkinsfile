@@ -20,5 +20,11 @@ pipeline {
 	       }    
 	
 	  }
-     }
+	stage('Docker hub loging'){
+	       steps { 
+	           sh "docker tag webapp:${env.BUILD_ID} siva3100/webapp:${env.BUILD_ID}"
+	       }    
+	
+       }
+    }
 }
