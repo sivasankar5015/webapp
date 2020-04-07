@@ -30,7 +30,7 @@ pipeline {
       }
       stage('Creating container'){
 	       steps { 
-	           sh 'docker run -itd siva3100/webapp'
+		       sh "docker run -itd siva3100/webapp:${env.BUILD_ID}"
 	       }    
       }
       
