@@ -30,7 +30,7 @@ pipeline {
       }
       stage('Creating container'){
 	       steps { 
-		       sh "docker run -itd -p 8088:80 siva3100/webapp:${env.BUILD_ID}"
+		       sh "docker run -itd -p 8010:8088 siva3100/webapp:${env.BUILD_ID}"
 	       }    
       }
       
