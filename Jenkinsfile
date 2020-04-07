@@ -28,6 +28,11 @@ pipeline {
 	           sh "docker push siva3100/webapp:${env.BUILD_ID}"
 	       }    
       }
-    
+      stage('Creating container'){
+	       steps { 
+	           sh 'docker push run -itd siva3100/webapp'
+	       }    
+      }
+      
    }
 }
